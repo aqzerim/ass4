@@ -448,3 +448,24 @@ function drop(event) {
   }
 }
 
+// Pie chart
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Sample data for the pie chart
+    var data = {
+      labels: ['Korea', 'USA', 'Domestic brands'],
+      datasets: [{
+        data: [60, 20, 20],
+        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+      }],
+    };
+
+    // Get the canvas element
+    var ctx = document.getElementById('myPieChart').getContext('2d');
+
+    // Create the pie chart
+    var myPieChart = new Chart(ctx, {
+      type: 'pie',
+      data: data,
+    });
+  });
