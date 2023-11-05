@@ -451,7 +451,6 @@ function drop(event) {
 // Pie chart
 
   document.addEventListener('DOMContentLoaded', function() {
-    // Sample data for the pie chart
     var data = {
       labels: ['Korea', 'USA', 'Domestic brands'],
       datasets: [{
